@@ -32,8 +32,8 @@ public:
         auto transposedMessage = currentMessage;
         auto oldNoteNumber = transposedMessage.getNoteNumber();
 
-        transposedMesssage.setNoteNumber(oldNumber + 4);
-        processdBuffer.addEvent(transposedMessage, samplePosition);
+        transposedMessage.setNoteNumber(oldNoteNumber + 4);
+        processedBuffer.addEvent(transposedMessage, samplePosition);
 
         currentMessage.setNoteNumber(50);
 
